@@ -169,7 +169,7 @@ public class Workercontroller {
 		
 	}
 	
-	@GetMapping("/salray/high")
+	@GetMapping("/salray/highs")
 	public List<Worker> salaryWith()
 	{
 		return workerservice.getAllworkers().stream().filter(sal->sal.getSalary()>30000).collect(Collectors.toList());
